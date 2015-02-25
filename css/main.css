@@ -28,6 +28,9 @@ a {
 	background-color:#3366CC;
 	color: white;
 }
+.well {
+	width: 50%;
+}
 footer {
 	position: absolute;
 	bottom: 0;
