@@ -4,7 +4,7 @@
     //print_r($xml);
     
     foreach ($xml->miseDeDepart->montant as $mise) {
-		echo $mise . "<br>";
+		echo "<option>".$mise."</option>";
 		}
 	} 
 	else {

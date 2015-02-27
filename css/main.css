@@ -2,8 +2,8 @@
 	height: 100%;
 }
 body {
-/*	background-image: url('../images/MoneyDrop.png');*/
-	background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+	background-image: url('../images/MoneyDrop.png');*/
+	/*background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
 	background-repeat: no-repeat;
 /*	background: linear-gradient(to bottom right, #003399, #0066FF);*/
 	min-height: 100%;
