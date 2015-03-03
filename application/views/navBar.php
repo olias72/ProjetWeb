@@ -1,14 +1,14 @@
 <nav class="navbar navbar-inverse">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="accueil.php">
-		<img alt="logo" class="img-rounded" height="79" src="images/MD_logo.png" width="143"></a>
+		<a class="navbar-brand" href="<?= base_url().'jeu/' ?>">
+		<img alt="logo" class="img-rounded" height="79" src="../assets/img/MD_logo.png" width="143"></a>
 		<ul class="nav navbar-nav">
-			<li><a href="theme.php">Jeu</a></li>
-			<li><a href="classement.php">Classement</a></li>
-			<li><a href="admin.php">Paramètres</a></li>
+			<li><a href="<?= base_url().'jeu/theme' ?>">Jeu</a></li>
+			<li><a href="<?= base_url().'jeu/classement' ?>">Classement</a></li>
+			<li><a href="<?= base_url().'jeu/admin' ?>">Paramètres</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="inscription.php">
+			<li><a href="<?= base_url().'jeu/inscription' ?>">
 			<span class="glyphicon glyphicon-user"></span> S'inscrire</a></li>
 			<li><a href="#connect" data-toggle="modal" data-target="#connect">
 			<span class="glyphicon glyphicon-log-in"></span> Se connecter</a></li>

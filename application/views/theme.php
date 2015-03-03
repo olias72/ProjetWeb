@@ -1,7 +1,4 @@
-﻿<?php include("head.php"); ?>
-<?php include("navBar.php"); ?>
-
-<div class="container well">
+﻿<div class="container well">
 	<div class="row">
 		<div class="col-md-4">
 			<label>Montant restant</label> </div>
@@ -26,5 +23,3 @@
 			</button></div>
 	</form>
 </div>
-
-<?php include("footer.php"); ?>

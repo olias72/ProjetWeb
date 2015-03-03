@@ -1,31 +1,34 @@
-﻿<?php include("head.php"); ?>
-<?php include("navBar.php"); ?>
-
-<div class="container well center-block">
+﻿<div class="container well center-block">
 	<form role="form">
 		<div class="form-group">
 			<label class="control-label col-md-4">Montant de départ</label>
 			<select class="form-control" name="miseDep">
-				<?php include("miseDeDepart.php");?>
+				<?php foreach ($mdd as $montant) {
+					echo "<option value=".$montant.">".$montant."</option>";
+				} ?>
 			</select> </div>
 		<div class="form-group">
 			<label class="control-label col-md-4">Montant des liasses</label>
 			<select class="form-control" name="liasse">
-				<?php include("liasses.php");?>
+				<?php foreach ($mdl as $liasse) {
+					echo "<option value=".$liasse.">".$liasse."</option>";
+				} ?>
 			</select> </div>
 		<div class="form-group">
 			<label class="control-label col-md-4">Temps de réflexion</label>
 			<select class="form-control" name="tps">
-				<?php include("temps.php"); ?>
+				<?php foreach ($tps as $temps) {
+					echo "<option value=".$temps.">".$temps."</option>";
+				} ?>
 			</select> </div>
 		<div class="form-group">
-			<label class="control-label col-md-4">Mode suspense</label>
+			<label class="control-label col-md-4">Mode de jeu</label>
 			<select class="form-control" name="mode">
-				<?php include("modeDeJeu.php"); ?>
+				<?php foreach ($mdj as $mode) {
+					echo "<option value=".$mode.">".$mode."</option>";
+				} ?>
 			</select> </div>
 		<div class="form-group pull-right">
 			<input class="btn btn-primary" type="submit" value="Confirmer"> </div>
 	</form>
 </div>
-
-<?php include("footer.php"); ?>

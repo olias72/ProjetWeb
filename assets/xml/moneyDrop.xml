@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="moneyDrop.xsl"?>
+<parametresDeJeu>
+	<miseDeDepart>
+		<montant>100000</montant>
+		<montant>150000</montant>
+		<montant>200000</montant>
+		<montant>250000</montant>
+		<montant>300000</montant>
+	</miseDeDepart>
+	<liasses>
+		<montant>2500</montant>
+		<montant>5000</montant>
+		<montant>10000</montant>
+		<montant>25000</montant>
+	</liasses>
+	<tempsDeReflexion>
+		<duree>10</duree>
+		<duree>20</duree>
+		<duree>30</duree>
+		<duree>40</duree>
+		<duree>50</duree>
+		<duree>60</duree>
+	</tempsDeReflexion>
+	<modeDeJeu>
+		<mode>normal</mode>
+		<mode>suspense</mode>
+	</modeDeJeu>
+</parametresDeJeu>	
+	
+

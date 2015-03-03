@@ -1,7 +1,4 @@
-﻿<?php include("head.php"); ?>
-<?php include("navBar.php"); ?>
-
-<div class="container well">
+﻿<div class="container well">
 	<form role="form">
 		<h2>Inscription</h2>
 		<div class="form-group">

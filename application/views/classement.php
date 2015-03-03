@@ -1,7 +1,4 @@
-﻿<?php include("head.php"); ?>
-<?php include("navBar.php"); ?>
-
-<div class="container well">
+﻿<div class="container well">
 	<table class="table table-bordered">
 		<thead>
 			<tr>
@@ -12,10 +9,10 @@
 		</thead>
 		<tr>
 			<td></td>
-			<td></td>
-			<td></td>
+			<td><?= $fromModel ?></td>
+			<td><?php foreach ($result as $key ) {
+				echo $key. "<br>";
+			} ?></td>
 		</tr>
 	</table>
 </div>
-
-<?php include("footer.php"); ?>
