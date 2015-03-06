@@ -23,20 +23,20 @@
     		<h4 class="modal-title">Log-in</h4>
     	</div>	
 		<div class="modal-body">
-    		<form class="form-inline" role="form">
+    		<form role="form">
 				<div class="form-group">
-					<label class="control-label" for="nom">Nom ou pseudo</label>
-					<input type="text" class="form-control" name="nom" id="nom" placeholder="Nom ou Pseudo">
+					<label class="col-lg-3 control-label" for="nom">Nom ou pseudo</label>
+					<input type="text" class="form-control input-sm" name="nom" id="nom" placeholder="Nom ou Pseudo">
 				</div>
 				<div class="form-group">
-					<label class="control-label" for="password">Mot de passe</label>
-					<input type="password" class="form-control" name="password" id="password" placeholder="Mot de passe">
+					<label class="col-lg-3 control-label" for="password">Mot de passe</label>
+					<input type="password" class="form-control input-sm" name="password" id="password" placeholder="Mot de passe">
 				</div>
-					<button type="submit" class="btn btn-info">Se connecter</button>
 			</form>
 		</div>
 		<div class="modal-footer">
 			<button class="btn btn-default" data-dismiss="modal">Annuler</button>
+			<button type="submit" class="btn btn-info">Se connecter</button>
 			<!--<a href="#" data-dismiss="modal" class="btn">Close</a>
 			<a href="#" class="btn btn-primary">Log-in</a>-->
 		</div>			

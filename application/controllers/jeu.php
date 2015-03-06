@@ -22,14 +22,21 @@ class Jeu extends CI_Controller {
 
 	public function classement()
 	{
-		$data['fromModel'] = $this->jeu_model->classement();
-		$data['result'] = [10,24,54];
 		$this->load->view('classement', $data);
 	}
 
 	public function theme()
 	{
 		$this->load->view('theme');
+	}
+
+	public function questionnaire()
+	{
+		$data['question'] = $this->jeu_model->question();
+		$nb_question = count($data['question']->result());
+		$data['id_question'] = rand(1, $nb_question );
+		$data['reponse'] = $this->jeu_model->reponse($data['id_question']);
+		$this->load->view('questionnaire', $data);
 	}
 
 	public function admin()

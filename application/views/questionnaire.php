@@ -1,8 +1,11 @@
 ﻿<div class="container well">
-	<h2>Question</h2>
-	<form role="form">
-		<label>réponse 1</label> <input type="number"> <label>réponse 2</label>
-		<input type="number"> <label>réponse 3</label> <input type="number">
-		<label>réponse 4</label> <input type="number">
-	</form>
+	<h2><?php echo $question->result()[$id_question-1]->intitule; ?></h2>
+		<form role="form">
+			<div class="form-group">
+				<?php foreach ($reponse->result() as $row) {
+					echo '<label class="control-label">'.$row->intitule.'</label>';
+					echo '<input class="form-control" type="number">';
+				} ?>
+			</div>
+		</form>
 </div>

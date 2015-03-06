@@ -9,10 +9,8 @@
 		</thead>
 		<tr>
 			<td></td>
-			<td><?= $fromModel ?></td>
-			<td><?php foreach ($result as $key ) {
-				echo $key. "<br>";
-			} ?></td>
+			<td></td>
+			<td></td>
 		</tr>
 	</table>
 </div>
