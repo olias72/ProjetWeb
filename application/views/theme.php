@@ -11,15 +11,15 @@
 
 <div class="container well">
 	<h2>Choisissez un thème</h2>
-	<form class=" well form-horizontal col-lg-6" role="form">
+	<form class=" well form-horizontal col-lg-6" role="form" method="post" action="questionnaire">
 		<div class="radio">
-			<label><input name="theme" type="radio" value="1">Thème 1</label>
+			<label><input name="theme" type="radio" value="<?= $theme->result()[$id_theme_1 - 1]->id_theme; ?>"><?php echo $theme->result()[$id_theme_1 - 1]->intitule; ?></label>
 		</div>
 		<div class="radio">
-			<label><input name="theme" type="radio" value="2">Thème 2</label>
+			<label><input name="theme" type="radio" value="<?= $theme->result()[$id_theme_2 - 1]->id_theme; ?>"><?php echo $theme->result()[$id_theme_2 - 1]->intitule; ?></label>
 		</div>
 		<div class="form-group">
-			<button class="btn btn-primary pull-right" type="submit">Valider
-			</button></div>
+			<button class="btn btn-primary pull-right" type="submit">Valider</button>
+		</div>
 	</form>
 </div>

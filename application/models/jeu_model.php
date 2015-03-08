@@ -7,16 +7,17 @@ Class Jeu_model extends CI_Model {
 	}
 
 	function theme() {
-
-	}
-
-	function question() {
-		$query = $this->db->get('question');
+		$query = $this->db->get('theme');
 		return $query;
 	}
 
-	function classement() {
-		
+	function question($id) {
+		$this->db->select('question.intitule, question.id_question');
+		$this->db->from('question');
+		$this->db->join('theme', 'question.theme_id = theme.id_theme');
+		$this->db->where('question.theme_id', $id);
+		$query = $this->db->get();
+		return $query;
 	}
 
 	function reponse($id) {
@@ -27,4 +28,10 @@ Class Jeu_model extends CI_Model {
 		$query = $this->db->get();
 		return $query;
 	}
+
+	function classement() {
+		
+	}
+
+	
 }
