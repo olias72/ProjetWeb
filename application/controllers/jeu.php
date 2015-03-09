@@ -40,9 +40,9 @@ class Jeu extends CI_Controller {
 	public function questionnaire()
 	{
 		$data['question'] = $this->jeu_model->question($_POST['theme']);
-		$nb_question = count($data['question']->result());
-		$data['id_question'] = rand(1, $nb_question);
-		$data['reponse'] = $this->jeu_model->reponse($data['id_question']);
+		//$nb_question = count($data['questions']->result());
+		//$data['question'] = rand(1, $nb_question);
+		//$data['reponse'] = $this->jeu_model->reponse($data['question']['id']);
 		$this->load->view('questionnaire', $data);
 	}
 

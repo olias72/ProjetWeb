@@ -1,5 +1,5 @@
 ﻿<div class="container well">
-	<h2><?php echo $question->result()[$id_question - 1]->intitule; ?></h2>
+	<h2><?php echo $question['intit']; ?></h2>
 	<form role="form">
 		<div class="form-group">
 			<?php foreach ($reponse->result() as $row) {

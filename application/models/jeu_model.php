@@ -17,7 +17,19 @@ Class Jeu_model extends CI_Model {
 		$this->db->join('theme', 'question.theme_id = theme.id_theme');
 		$this->db->where('question.theme_id', $id);
 		$query = $this->db->get();
-		return $query;
+		$nb_question = count($query->result());
+		$ref = rand(1, $nb_question);
+		$i = 0;
+		//$data['jj'] = "";
+		foreach ($query->result() as $row)
+		{
+		    if($i==$ref) {
+		    	$data['intit'] = $row->intitule;
+		    	$data['id'] = $row->id_question;
+		    }
+		    $i++;
+		}
+		return $data;
 	}
 
 	function reponse($id) {
